@@ -9,6 +9,7 @@
 
         /* LOAD MAIN CSS */
         wp_enqueue_style('css-mac-main', get_stylesheet_uri());
+        wp_enqueue_style('css-mac-custom', get_theme_file_uri('/css/mac-styles.css'));
         wp_enqueue_style('css-bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
         wp_enqueue_style('css-slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 

@@ -1,0 +1,53 @@
+/* COLORS */
+$white:#f6f6f6;
+$offWhite:#dddddd;
+
+$gray:#c0c0c0;
+
+$purple:#b06ab3;
+$blue:#4668db;
+
+/* GENERIC STYLES */
+p.small {font-size:0.85em;}
+p.large {font-size:1.15em;}
+
+.mac-purple-bg {
+    background-color:$purple;
+    h1, h2, h3, h4, h5, h6 {
+        color:$white;
+    }
+    p {
+        color:$offWhite;
+    }
+}
+
+/* FRONT PAGE STYLES */
+div#mac-front-page-container {
+    margin-top:65px;
+    padding:0;
+    background-color:$white;
+    border:$gray 1px solid;
+    box-shadow:10px 9px 5px rgba(51,51,51,0.65);
+    div.row { margin:0; }
+}
+
+/* LEFT COL */
+div.mac-resume-left-col {
+    div.profContainer {
+        text-align:center;
+        padding:35px 0 0;
+        border-bottom:$offWhite 1px solid;
+        img { max-width:200px; margin-bottom:20px; }
+    }
+}
+
+/* RIGHT COL */
+div.mac-resume-right-col {
+    div.mac-info-section {
+        background-color:$offWhite;
+        padding:15px;
+        margin-top:15px;
+        h4 { font-weight:400; }
+        i { margin-right:0.5em; }
+    }
+}
