@@ -2,7 +2,10 @@
 $white:#f6f6f6;
 $offWhite:#dddddd;
 
-$gray:#c0c0c0;
+$gray:#b0b0b0;
+
+$offBlack:#303030;
+$black: #101010;
 
 $purple:#b06ab3;
 $blue:#4668db;
@@ -10,6 +13,10 @@ $blue:#4668db;
 /* GENERIC STYLES */
 p.small {font-size:0.85em;}
 p.large {font-size:1.15em;}
+
+a { color:$blue; text-decoration: none; }
+a:hover, a:focus, a:active { text-decoration:underline; }
+a i { text-decoration:none !important; }
 
 .mac-purple-bg {
     background-color:$purple;
@@ -21,14 +28,32 @@ p.large {font-size:1.15em;}
     }
 }
 
+body {
+    font-size:15px;
+    color:$black;
+}
+
+p, ul li, ol li { color:$offBlack; }
+
+img {
+    max-width:100%;
+}
+
 /* FRONT PAGE STYLES */
 div#mac-front-page-container {
     margin-top:65px;
     padding:0;
     background-color:$white;
     border:$gray 1px solid;
-    box-shadow:10px 9px 5px rgba(51,51,51,0.65);
+    box-shadow:10px 9px 5px rgba($black, 0.65);
     div.row { margin:0; }
+}
+
+div.mac-info-section, div.mac-pro-skills {
+    padding:1em;
+    margin-bottom:1em;
+    h4 { font-weight:400; margin-bottom:1em; }
+    i { margin-right:0.5em; }
 }
 
 /* LEFT COL */
@@ -39,15 +64,56 @@ div.mac-resume-left-col {
         border-bottom:$offWhite 1px solid;
         img { max-width:200px; margin-bottom:20px; }
     }
+    div.mac-info-section {
+        border-bottom:1px solid $offWhite;
+        div.mac-info-section-container {
+            padding:1em 0;
+            h6, p { margin-bottom:0; }
+            a { color:$white; text-decoration:underline; }
+            a:hover, a:focus, a:active { color:$offWhite; text-decoration: none; }
+        }
+    }
+    div.mac-pro-skills {
+        div.mac-pro-skills-container {
+            margin:0 auto 1em;
+            width:85%;
+            h6 { margin:0; color:$offWhite; }
+        }
+        div.mac-pro-skills-container.header {
+            margin-bottom:1.5em;
+            width:100%;
+        }
+    }
 }
 
 /* RIGHT COL */
 div.mac-resume-right-col {
+    padding:1em;
     div.mac-info-section {
         background-color:$offWhite;
-        padding:15px;
-        margin-top:15px;
-        h4 { font-weight:400; }
-        i { margin-right:0.5em; }
+        div.mac-info-section-container {
+            margin-bottom:1em;
+            h5 {
+                font-size:18px;
+                font-weight:bold;
+                span {
+                    font-size:16px;
+                    font-weight:normal;
+                }
+            }
+            h6 {
+                color:$purple;
+                text-transform:uppercase;
+                font-size:15px;
+                font-weight:bold;
+            }
+            p, ul { margin-bottom:0; }
+            div.mac-interest {
+                text-align:center;
+                padding:0 0.5em;
+                i { font-size:36px; color:$offBlack; margin:0 0 10px; }
+                h6 { color:$offBlack; }
+            }
+        }
     }
 }

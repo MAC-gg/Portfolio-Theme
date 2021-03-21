@@ -7,11 +7,12 @@
         wp_enqueue_style('font-Rubik', '//fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900');
         /* FONT AWESOME LOADED WITH PLUGIN */
 
-        /* LOAD MAIN CSS */
-        wp_enqueue_style('css-mac-main', get_stylesheet_uri());
-        wp_enqueue_style('css-mac-custom', get_theme_file_uri('/css/mac-styles.css'));
+        /* LOAD CSS */
         wp_enqueue_style('css-bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css');
         wp_enqueue_style('css-slick-slider', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+        /* LOAD THIS CSS LAST */
+        wp_enqueue_style('css-mac-main', get_stylesheet_uri());
+        wp_enqueue_style('css-mac-custom', get_theme_file_uri('/css/mac-styles.css'));
 
         /* LOAD BOOTSTRAP JS */
         wp_enqueue_script('js-bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js');

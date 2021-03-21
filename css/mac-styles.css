@@ -6,6 +6,16 @@ p.small {
 p.large {
   font-size: 1.15em; }
 
+a {
+  color: #4668db;
+  text-decoration: none; }
+
+a:hover, a:focus, a:active {
+  text-decoration: underline; }
+
+a i {
+  text-decoration: none !important; }
+
 .mac-purple-bg {
   background-color: #b06ab3; }
   .mac-purple-bg h1, .mac-purple-bg h2, .mac-purple-bg h3, .mac-purple-bg h4, .mac-purple-bg h5, .mac-purple-bg h6 {
@@ -13,15 +23,34 @@ p.large {
   .mac-purple-bg p {
     color: #dddddd; }
 
+body {
+  font-size: 15px;
+  color: #101010; }
+
+p, ul li, ol li {
+  color: #303030; }
+
+img {
+  max-width: 100%; }
+
 /* FRONT PAGE STYLES */
 div#mac-front-page-container {
   margin-top: 65px;
   padding: 0;
   background-color: #f6f6f6;
-  border: #c0c0c0 1px solid;
-  box-shadow: 10px 9px 5px rgba(51, 51, 51, 0.65); }
+  border: #b0b0b0 1px solid;
+  box-shadow: 10px 9px 5px rgba(16, 16, 16, 0.65); }
   div#mac-front-page-container div.row {
     margin: 0; }
+
+div.mac-info-section, div.mac-pro-skills {
+  padding: 1em;
+  margin-bottom: 1em; }
+  div.mac-info-section h4, div.mac-pro-skills h4 {
+    font-weight: 400;
+    margin-bottom: 1em; }
+  div.mac-info-section i, div.mac-pro-skills i {
+    margin-right: 0.5em; }
 
 /* LEFT COL */
 div.mac-resume-left-col div.profContainer {
@@ -32,12 +61,56 @@ div.mac-resume-left-col div.profContainer {
     max-width: 200px;
     margin-bottom: 20px; }
 
+div.mac-resume-left-col div.mac-info-section {
+  border-bottom: 1px solid #dddddd; }
+  div.mac-resume-left-col div.mac-info-section div.mac-info-section-container {
+    padding: 1em 0; }
+    div.mac-resume-left-col div.mac-info-section div.mac-info-section-container h6, div.mac-resume-left-col div.mac-info-section div.mac-info-section-container p {
+      margin-bottom: 0; }
+    div.mac-resume-left-col div.mac-info-section div.mac-info-section-container a {
+      color: #f6f6f6;
+      text-decoration: underline; }
+    div.mac-resume-left-col div.mac-info-section div.mac-info-section-container a:hover, div.mac-resume-left-col div.mac-info-section div.mac-info-section-container a:focus, div.mac-resume-left-col div.mac-info-section div.mac-info-section-container a:active {
+      color: #dddddd;
+      text-decoration: none; }
+
+div.mac-resume-left-col div.mac-pro-skills div.mac-pro-skills-container {
+  margin: 0 auto 1em;
+  width: 85%; }
+  div.mac-resume-left-col div.mac-pro-skills div.mac-pro-skills-container h6 {
+    margin: 0;
+    color: #dddddd; }
+
+div.mac-resume-left-col div.mac-pro-skills div.mac-pro-skills-container.header {
+  margin-bottom: 1.5em;
+  width: 100%; }
+
 /* RIGHT COL */
-div.mac-resume-right-col div.mac-info-section {
-  background-color: #dddddd;
-  padding: 15px;
-  margin-top: 15px; }
-  div.mac-resume-right-col div.mac-info-section h4 {
-    font-weight: 400; }
-  div.mac-resume-right-col div.mac-info-section i {
-    margin-right: 0.5em; }
+div.mac-resume-right-col {
+  padding: 1em; }
+  div.mac-resume-right-col div.mac-info-section {
+    background-color: #dddddd; }
+    div.mac-resume-right-col div.mac-info-section div.mac-info-section-container {
+      margin-bottom: 1em; }
+      div.mac-resume-right-col div.mac-info-section div.mac-info-section-container h5 {
+        font-size: 18px;
+        font-weight: bold; }
+        div.mac-resume-right-col div.mac-info-section div.mac-info-section-container h5 span {
+          font-size: 16px;
+          font-weight: normal; }
+      div.mac-resume-right-col div.mac-info-section div.mac-info-section-container h6 {
+        color: #b06ab3;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold; }
+      div.mac-resume-right-col div.mac-info-section div.mac-info-section-container p, div.mac-resume-right-col div.mac-info-section div.mac-info-section-container ul {
+        margin-bottom: 0; }
+      div.mac-resume-right-col div.mac-info-section div.mac-info-section-container div.mac-interest {
+        text-align: center;
+        padding: 0 0.5em; }
+        div.mac-resume-right-col div.mac-info-section div.mac-info-section-container div.mac-interest i {
+          font-size: 36px;
+          color: #303030;
+          margin: 0 0 10px; }
+        div.mac-resume-right-col div.mac-info-section div.mac-info-section-container div.mac-interest h6 {
+          color: #303030; }
